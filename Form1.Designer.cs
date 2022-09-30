@@ -29,66 +29,66 @@ namespace Weather_API
         /// </summary>
         private void InitializeComponent()
         {
-            this.btn1 = new System.Windows.Forms.Button();
-            this.btn2 = new System.Windows.Forms.Button();
-            this.btn3 = new System.Windows.Forms.Button();
+            this.btnXML = new System.Windows.Forms.Button();
+            this.btnJSON = new System.Windows.Forms.Button();
+            this.btnClose = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.txt1 = new System.Windows.Forms.TextBox();
-            this.txt2 = new System.Windows.Forms.TextBox();
+            this.txtZip = new System.Windows.Forms.TextBox();
+            this.txtCity = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.txt3 = new System.Windows.Forms.TextBox();
+            this.txtLatitude = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.txt5 = new System.Windows.Forms.TextBox();
+            this.txtLow = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.txt4 = new System.Windows.Forms.TextBox();
-            this.txt10 = new System.Windows.Forms.TextBox();
-            this.txt11 = new System.Windows.Forms.TextBox();
-            this.txt6 = new System.Windows.Forms.TextBox();
+            this.txtLongitude = new System.Windows.Forms.TextBox();
+            this.txtTemp = new System.Windows.Forms.TextBox();
+            this.txtHigh = new System.Windows.Forms.TextBox();
+            this.txtFeels = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.txt8 = new System.Windows.Forms.TextBox();
-            this.txt7 = new System.Windows.Forms.TextBox();
+            this.txtWind = new System.Windows.Forms.TextBox();
+            this.txtClouds = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // btn1
+            // btnXML
             // 
-            this.btn1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.btn1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn1.ForeColor = System.Drawing.Color.Blue;
-            this.btn1.Location = new System.Drawing.Point(35, 29);
-            this.btn1.Name = "btn1";
-            this.btn1.Size = new System.Drawing.Size(260, 44);
-            this.btn1.TabIndex = 0;
-            this.btn1.Text = "Get Weather (XML)";
-            this.btn1.UseVisualStyleBackColor = false;
-            this.btn1.Click += new System.EventHandler(this.btn1_Click);
+            this.btnXML.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnXML.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXML.ForeColor = System.Drawing.Color.Blue;
+            this.btnXML.Location = new System.Drawing.Point(35, 29);
+            this.btnXML.Name = "btnXML";
+            this.btnXML.Size = new System.Drawing.Size(260, 44);
+            this.btnXML.TabIndex = 0;
+            this.btnXML.Text = "Get Weather (XML)";
+            this.btnXML.UseVisualStyleBackColor = false;
+            this.btnXML.Click += new System.EventHandler(this.btnXML_Click);
             // 
-            // btn2
+            // btnJSON
             // 
-            this.btn2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.btn2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn2.ForeColor = System.Drawing.Color.Blue;
-            this.btn2.Location = new System.Drawing.Point(35, 83);
-            this.btn2.Name = "btn2";
-            this.btn2.Size = new System.Drawing.Size(260, 44);
-            this.btn2.TabIndex = 1;
-            this.btn2.Text = "Get Weather (JSON)";
-            this.btn2.UseVisualStyleBackColor = false;
-            this.btn2.Click += new System.EventHandler(this.btn2_Click);
+            this.btnJSON.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnJSON.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnJSON.ForeColor = System.Drawing.Color.Blue;
+            this.btnJSON.Location = new System.Drawing.Point(35, 83);
+            this.btnJSON.Name = "btnJSON";
+            this.btnJSON.Size = new System.Drawing.Size(260, 44);
+            this.btnJSON.TabIndex = 1;
+            this.btnJSON.Text = "Get Weather (JSON)";
+            this.btnJSON.UseVisualStyleBackColor = false;
+            this.btnJSON.Click += new System.EventHandler(this.btnJSON_Click);
             // 
-            // btn3
+            // btnClose
             // 
-            this.btn3.Location = new System.Drawing.Point(213, 412);
-            this.btn3.Name = "btn3";
-            this.btn3.Size = new System.Drawing.Size(82, 31);
-            this.btn3.TabIndex = 2;
-            this.btn3.Text = "Close";
-            this.btn3.UseVisualStyleBackColor = true;
-            this.btn3.Click += new System.EventHandler(this.button3_Click);
+            this.btnClose.Location = new System.Drawing.Point(213, 412);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(82, 31);
+            this.btnClose.TabIndex = 2;
+            this.btnClose.Text = "Close";
+            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // label1
             // 
@@ -98,21 +98,20 @@ namespace Weather_API
             this.label1.Size = new System.Drawing.Size(87, 13);
             this.label1.TabIndex = 3;
             this.label1.Text = "Enter a Zip Code";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // txt1
+            // txtZip
             // 
-            this.txt1.Location = new System.Drawing.Point(35, 160);
-            this.txt1.Name = "txt1";
-            this.txt1.Size = new System.Drawing.Size(260, 20);
-            this.txt1.TabIndex = 4;
+            this.txtZip.Location = new System.Drawing.Point(35, 160);
+            this.txtZip.Name = "txtZip";
+            this.txtZip.Size = new System.Drawing.Size(260, 20);
+            this.txtZip.TabIndex = 4;
             // 
-            // txt2
+            // txtCity
             // 
-            this.txt2.Location = new System.Drawing.Point(36, 215);
-            this.txt2.Name = "txt2";
-            this.txt2.Size = new System.Drawing.Size(259, 20);
-            this.txt2.TabIndex = 6;
+            this.txtCity.Location = new System.Drawing.Point(36, 215);
+            this.txtCity.Name = "txtCity";
+            this.txtCity.Size = new System.Drawing.Size(259, 20);
+            this.txtCity.TabIndex = 6;
             // 
             // label2
             // 
@@ -123,12 +122,12 @@ namespace Weather_API
             this.label2.TabIndex = 5;
             this.label2.Text = "City";
             // 
-            // txt3
+            // txtLatitude
             // 
-            this.txt3.Location = new System.Drawing.Point(35, 270);
-            this.txt3.Name = "txt3";
-            this.txt3.Size = new System.Drawing.Size(129, 20);
-            this.txt3.TabIndex = 8;
+            this.txtLatitude.Location = new System.Drawing.Point(35, 270);
+            this.txtLatitude.Name = "txtLatitude";
+            this.txtLatitude.Size = new System.Drawing.Size(129, 20);
+            this.txtLatitude.TabIndex = 8;
             // 
             // label3
             // 
@@ -148,12 +147,12 @@ namespace Weather_API
             this.label4.TabIndex = 9;
             this.label4.Text = "Longitude";
             // 
-            // txt5
+            // txtLow
             // 
-            this.txt5.Location = new System.Drawing.Point(100, 326);
-            this.txt5.Name = "txt5";
-            this.txt5.Size = new System.Drawing.Size(61, 20);
-            this.txt5.TabIndex = 14;
+            this.txtLow.Location = new System.Drawing.Point(100, 326);
+            this.txtLow.Name = "txtLow";
+            this.txtLow.Size = new System.Drawing.Size(61, 20);
+            this.txtLow.TabIndex = 14;
             // 
             // label5
             // 
@@ -199,35 +198,34 @@ namespace Weather_API
             this.label9.Size = new System.Drawing.Size(27, 13);
             this.label9.TabIndex = 22;
             this.label9.Text = "Low";
-            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
-            // txt4
+            // txtLongitude
             // 
-            this.txt4.Location = new System.Drawing.Point(170, 270);
-            this.txt4.Name = "txt4";
-            this.txt4.Size = new System.Drawing.Size(125, 20);
-            this.txt4.TabIndex = 23;
+            this.txtLongitude.Location = new System.Drawing.Point(170, 270);
+            this.txtLongitude.Name = "txtLongitude";
+            this.txtLongitude.Size = new System.Drawing.Size(125, 20);
+            this.txtLongitude.TabIndex = 23;
             // 
-            // txt10
+            // txtTemp
             // 
-            this.txt10.Location = new System.Drawing.Point(35, 326);
-            this.txt10.Name = "txt10";
-            this.txt10.Size = new System.Drawing.Size(59, 20);
-            this.txt10.TabIndex = 24;
+            this.txtTemp.Location = new System.Drawing.Point(35, 326);
+            this.txtTemp.Name = "txtTemp";
+            this.txtTemp.Size = new System.Drawing.Size(59, 20);
+            this.txtTemp.TabIndex = 24;
             // 
-            // txt11
+            // txtHigh
             // 
-            this.txt11.Location = new System.Drawing.Point(167, 326);
-            this.txt11.Name = "txt11";
-            this.txt11.Size = new System.Drawing.Size(61, 20);
-            this.txt11.TabIndex = 25;
+            this.txtHigh.Location = new System.Drawing.Point(167, 326);
+            this.txtHigh.Name = "txtHigh";
+            this.txtHigh.Size = new System.Drawing.Size(61, 20);
+            this.txtHigh.TabIndex = 25;
             // 
-            // txt6
+            // txtFeels
             // 
-            this.txt6.Location = new System.Drawing.Point(234, 326);
-            this.txt6.Name = "txt6";
-            this.txt6.Size = new System.Drawing.Size(61, 20);
-            this.txt6.TabIndex = 26;
+            this.txtFeels.Location = new System.Drawing.Point(234, 326);
+            this.txtFeels.Name = "txtFeels";
+            this.txtFeels.Size = new System.Drawing.Size(61, 20);
+            this.txtFeels.TabIndex = 26;
             // 
             // label10
             // 
@@ -238,48 +236,48 @@ namespace Weather_API
             this.label10.TabIndex = 27;
             this.label10.Text = "Feels Like";
             // 
-            // txt8
+            // txtWind
             // 
-            this.txt8.Location = new System.Drawing.Point(35, 377);
-            this.txt8.Name = "txt8";
-            this.txt8.Size = new System.Drawing.Size(129, 20);
-            this.txt8.TabIndex = 29;
+            this.txtWind.Location = new System.Drawing.Point(35, 377);
+            this.txtWind.Name = "txtWind";
+            this.txtWind.Size = new System.Drawing.Size(129, 20);
+            this.txtWind.TabIndex = 29;
             // 
-            // txt7
+            // txtClouds
             // 
-            this.txt7.Location = new System.Drawing.Point(170, 377);
-            this.txt7.Name = "txt7";
-            this.txt7.Size = new System.Drawing.Size(125, 20);
-            this.txt7.TabIndex = 30;
+            this.txtClouds.Location = new System.Drawing.Point(170, 377);
+            this.txtClouds.Name = "txtClouds";
+            this.txtClouds.Size = new System.Drawing.Size(125, 20);
+            this.txtClouds.TabIndex = 30;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(325, 465);
-            this.Controls.Add(this.txt7);
-            this.Controls.Add(this.txt8);
+            this.Controls.Add(this.txtClouds);
+            this.Controls.Add(this.txtWind);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.txt6);
-            this.Controls.Add(this.txt11);
-            this.Controls.Add(this.txt10);
-            this.Controls.Add(this.txt4);
+            this.Controls.Add(this.txtFeels);
+            this.Controls.Add(this.txtHigh);
+            this.Controls.Add(this.txtTemp);
+            this.Controls.Add(this.txtLongitude);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.txt5);
+            this.Controls.Add(this.txtLow);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.txt3);
+            this.Controls.Add(this.txtLatitude);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.txt2);
+            this.Controls.Add(this.txtCity);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.txt1);
+            this.Controls.Add(this.txtZip);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.btn3);
-            this.Controls.Add(this.btn2);
-            this.Controls.Add(this.btn1);
+            this.Controls.Add(this.btnClose);
+            this.Controls.Add(this.btnJSON);
+            this.Controls.Add(this.btnXML);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -290,29 +288,29 @@ namespace Weather_API
 
         #endregion
 
-        private System.Windows.Forms.Button btn1;
-        private System.Windows.Forms.Button btn2;
-        private System.Windows.Forms.Button btn3;
+        private System.Windows.Forms.Button btnXML;
+        private System.Windows.Forms.Button btnJSON;
+        private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txt1;
-        private System.Windows.Forms.TextBox txt2;
+        private System.Windows.Forms.TextBox txtZip;
+        private System.Windows.Forms.TextBox txtCity;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txt3;
+        private System.Windows.Forms.TextBox txtLatitude;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txt5;
+        private System.Windows.Forms.TextBox txtLow;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox txt4;
-        private System.Windows.Forms.TextBox txt10;
-        private System.Windows.Forms.TextBox txt11;
-        private System.Windows.Forms.TextBox txt6;
+        private System.Windows.Forms.TextBox txtLongitude;
+        private System.Windows.Forms.TextBox txtTemp;
+        private System.Windows.Forms.TextBox txtHigh;
+        private System.Windows.Forms.TextBox txtFeels;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox txt8;
-        private System.Windows.Forms.TextBox txt7;
+        private System.Windows.Forms.TextBox txtWind;
+        private System.Windows.Forms.TextBox txtClouds;
     }
 }
 
