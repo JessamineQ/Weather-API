@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Weather_API.Models;
+using WeatherAPI.Services;
 
 namespace Weather_API
 {
@@ -84,7 +85,7 @@ namespace Weather_API
 
             try
             {
-                //weather = WeatherService.GetWeather(iZip, isXML);
+                weather = WeatherService.GetWeather(iZip, isXML);
 
                 this.PopulateWeatherData(weather);
             }

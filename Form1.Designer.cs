@@ -175,7 +175,7 @@ namespace Weather_API
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(162, 361);
+            this.label7.Location = new System.Drawing.Point(167, 361);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(39, 13);
             this.label7.TabIndex = 17;
